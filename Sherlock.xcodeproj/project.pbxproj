@@ -12,6 +12,8 @@
 		35C0465F1CB97A1C00926984 /* Sherlock_Lib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35C0465E1CB97A1C00926984 /* Sherlock_Lib.cpp */; };
 		35C0466A1CB97AB200926984 /* Sherlock_Controller_Base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35C046681CB97AB200926984 /* Sherlock_Controller_Base.cpp */; };
 		35C0466B1CB97AB200926984 /* Sherlock_Controller_Base.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 35C046691CB97AB200926984 /* Sherlock_Controller_Base.hpp */; };
+		35C0466E1CB9838C00926984 /* SherlockControllerWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 35C0466D1CB9838C00926984 /* SherlockControllerWrapper.mm */; };
+		35C046701CB983A700926984 /* SherlockControllerWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C0466F1CB983A700926984 /* SherlockControllerWrapper.h */; };
 		8420023212E829A200E1E9CE /* OsiriXAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8420023112E829A200E1E9CE /* OsiriXAPI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		8D5B49AE048680CD000E48DA /* Sherlock_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCF630370AF2F00C91783 /* Sherlock_Prefix.pch */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
@@ -32,6 +34,8 @@
 		35C0465E1CB97A1C00926984 /* Sherlock_Lib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sherlock_Lib.cpp; sourceTree = "<group>"; };
 		35C046681CB97AB200926984 /* Sherlock_Controller_Base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sherlock_Controller_Base.cpp; path = Classes/Controller_Objects/Sherlock_Controller_Base.cpp; sourceTree = "<group>"; };
 		35C046691CB97AB200926984 /* Sherlock_Controller_Base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Sherlock_Controller_Base.hpp; path = Classes/Controller_Objects/Sherlock_Controller_Base.hpp; sourceTree = "<group>"; };
+		35C0466D1CB9838C00926984 /* SherlockControllerWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SherlockControllerWrapper.mm; path = Classes/Controller_Wrappers/SherlockControllerWrapper.mm; sourceTree = "<group>"; };
+		35C0466F1CB983A700926984 /* SherlockControllerWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SherlockControllerWrapper.h; path = Classes/Controller_Wrappers/SherlockControllerWrapper.h; sourceTree = "<group>"; };
 		8420023112E829A200E1E9CE /* OsiriXAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OsiriXAPI.framework; sourceTree = "<group>"; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB5D36050680E57E00F4007A /* Sherlock.osirixplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sherlock.osirixplugin; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +98,7 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				35C0466C1CB9833900926984 /* Controller_Wrappers */,
 				35C046631CB97A2B00926984 /* Controller_Objects */,
 				AB2C26750677B0C400A08910 /* SherlockFilter */,
 			);
@@ -147,10 +152,19 @@
 		35C046631CB97A2B00926984 /* Controller_Objects */ = {
 			isa = PBXGroup;
 			children = (
-				35C046681CB97AB200926984 /* Sherlock_Controller_Base.cpp */,
 				35C046691CB97AB200926984 /* Sherlock_Controller_Base.hpp */,
+				35C046681CB97AB200926984 /* Sherlock_Controller_Base.cpp */,
 			);
 			name = Controller_Objects;
+			sourceTree = "<group>";
+		};
+		35C0466C1CB9833900926984 /* Controller_Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				35C0466D1CB9838C00926984 /* SherlockControllerWrapper.mm */,
+				35C0466F1CB983A700926984 /* SherlockControllerWrapper.h */,
+			);
+			name = Controller_Wrappers;
 			sourceTree = "<group>";
 		};
 		AB2C26750677B0C400A08910 /* SherlockFilter */ = {
@@ -181,6 +195,7 @@
 			files = (
 				8D5B49AE048680CD000E48DA /* Sherlock_Prefix.pch in Headers */,
 				ABA48A650680BB600089EB4F /* SherlockFilter.h in Headers */,
+				35C046701CB983A700926984 /* SherlockControllerWrapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35C0466E1CB9838C00926984 /* SherlockControllerWrapper.mm in Sources */,
 				ABA48A670680BB690089EB4F /* SherlockFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,7 +422,9 @@
 		CE6A9A9108AC841300D0C1EE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -428,6 +446,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				LIBRARY_STYLE = Bundle;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-undefined",
@@ -450,7 +469,9 @@
 		CE6A9A9208AC841300D0C1EE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,6 +489,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				LIBRARY_STYLE = Bundle;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-undefined",

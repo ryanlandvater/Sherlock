@@ -44,6 +44,7 @@
       allowLocationSimulation = "YES">
       <PathRunnable
          runnableDebuggingMode = "0"
+         BundleIdentifier = "com.horosproject.horos"
          FilePath = "/Applications/Horos.app">
       </PathRunnable>
       <MacroExpansion>
