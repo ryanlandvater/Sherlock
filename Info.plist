@@ -23,6 +23,6 @@
 		<string>Sherlock</string>
 	</array>
 	<key>pluginType</key>
-	<string>other</string>
+	<string>Database</string>
 </dict>
 </plist>
