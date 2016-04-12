@@ -30,7 +30,7 @@
 	else return -1;*/
     NSString* textToDisplay = self.SherlockControllerObj.string;
     
-    NSAlert *myAlert=[NSAlert alertWithMessageText:@"Test"
+    NSAlert *myAlert=[NSAlert alertWithMessageText:textToDisplay
                                      defaultButton:@"Hello"
                                    alternateButton:nil
                                        otherButton:nil

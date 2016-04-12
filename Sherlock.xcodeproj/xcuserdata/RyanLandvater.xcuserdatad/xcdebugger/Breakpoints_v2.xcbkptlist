@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SherlockFilter.m"
-            timestampString = "482089368.489988"
+            filePath = "Classes/Controller_Objects/Sherlock_Controller_Base.cpp"
+            timestampString = "482092011.981364"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "-filterImage:"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "Sherlock_Controller::Sherlock_Controller (const char* string)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

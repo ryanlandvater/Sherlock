@@ -14,7 +14,7 @@ Sherlock_Controller::Sherlock_Controller (){
 }
 
 Sherlock_Controller::Sherlock_Controller (const char* string) {
-    
+    setString(string);
 }
 
 Sherlock_Controller::~Sherlock_Controller() {

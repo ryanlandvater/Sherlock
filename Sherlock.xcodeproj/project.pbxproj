@@ -14,6 +14,7 @@
 		35C0466B1CB97AB200926984 /* Sherlock_Controller_Base.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 35C046691CB97AB200926984 /* Sherlock_Controller_Base.hpp */; };
 		35C0466E1CB9838C00926984 /* SherlockControllerWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 35C0466D1CB9838C00926984 /* SherlockControllerWrapper.mm */; };
 		35C046701CB983A700926984 /* SherlockControllerWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C0466F1CB983A700926984 /* SherlockControllerWrapper.h */; };
+		35C046741CBC8E0B00926984 /* libSherlock_Lib.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C046581CB97A1C00926984 /* libSherlock_Lib.dylib */; };
 		8420023212E829A200E1E9CE /* OsiriXAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8420023112E829A200E1E9CE /* OsiriXAPI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		8D5B49AE048680CD000E48DA /* Sherlock_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCF630370AF2F00C91783 /* Sherlock_Prefix.pch */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
@@ -55,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35C046741CBC8E0B00926984 /* libSherlock_Lib.dylib in Frameworks */,
 				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
 				8420023212E829A200E1E9CE /* OsiriXAPI.framework in Frameworks */,
 			);
@@ -424,7 +426,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -512,6 +514,7 @@
 		CE6A9A9508AC841300D0C1EE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
 				ENABLE_TESTABILITY = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				ONLY_ACTIVE_ARCH = YES;

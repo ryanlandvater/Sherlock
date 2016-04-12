@@ -45,6 +45,7 @@
 #pragma mark Cleanup
 
 - (void) dealloc {
+    [super dealloc];
     delete _linkedSherlockController;
 }
 
