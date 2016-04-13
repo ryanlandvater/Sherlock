@@ -10,11 +10,11 @@
 #define SherlockControllerWrapper_h
 
 #import <Foundation/Foundation.h>
+#import <OsiriXAPI/PluginFilter.h>
 
-@interface SherlockController : NSObject
-@property (nonatomic, copy) NSString* string;
+@interface WatsonController : PluginFilter
 
-- (instancetype) initWithString: (NSString*) string;
+- (long) filterImage:(NSString*) menuName;
+
 @end
-
 #endif /* SherlockControllerWrapper_h */
