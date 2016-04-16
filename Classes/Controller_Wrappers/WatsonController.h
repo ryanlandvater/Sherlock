@@ -14,6 +14,8 @@
 
 @interface WatsonController : PluginFilter
 
+@property (nonatomic, readonly) NSArray* currentImage;
+
 - (long) filterImage:(NSString*) menuName;
 
 @end

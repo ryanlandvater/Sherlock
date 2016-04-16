@@ -10,7 +10,7 @@
 
 
 Sherlock_Controller::Sherlock_Controller (){
-    std::cout<<"SherlockController_C++ Object Created" << std::endl;
+    
 }
 
 Sherlock_Controller::Sherlock_Controller (const char* string) {
@@ -28,6 +28,7 @@ void Sherlock_Controller::setString(const char *string){
     string_ = (char*)(string ? strdup(string) : NULL);
 }
 
-char* Sherlock_Controller::getString(void) {
-    return string_;
-}
+char* Sherlock_Controller::getString(void) {return string_;}
+bool Sherlock_Controller::isImageController(void) {return isImageController_;}
+bool Sherlock_Controller::isProcessingController(void) {return isProcessingController_;}
+

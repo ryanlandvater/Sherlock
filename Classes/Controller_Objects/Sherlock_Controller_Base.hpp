@@ -13,12 +13,16 @@
 #include <stdlib.h>
 #include <cstring>
 #include <iostream>
+#include <vector>
 
 class Sherlock_Controller {
 #pragma mark -
 #pragma mark Private Inventory
-private:
+protected:
     char* string_;
+    bool isMainController_ = false;
+    bool isImageController_ = false;
+    bool isProcessingController_=false;
     
 #pragma mark -
 #pragma mark Public Methods
@@ -29,6 +33,8 @@ public:
     
     char* getString (void);
     void setString (const char* string);
+    bool isImageController(void);
+    bool isProcessingController(void);
 
 };
 
