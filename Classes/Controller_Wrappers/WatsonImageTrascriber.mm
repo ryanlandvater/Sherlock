@@ -17,19 +17,23 @@
 
 - (id) init {
     self = [super init];
+    
     if (self != nil) {
         _Sherlock = new Sherlock_Image_Controller();
+        return self; // Success -> Transcriber returned
     }
-    return self;
+    return nil;      // Failure -> Null pointer returned
 }
 
 - (id) initWithImageStack:(NSArray *) currentImage {
     self = [super init];
     
     if (self != nil) {
-        [self addImageStack:currentImage];
+        if ([self addImageStack:currentImage]) {
+            return self; // Success -> Transcriber returned
+        }
     }
-    return self;
+    return nil;         // Failure -> Null pointer returned
 }
 
 - (int) addImageStack:(NSArray *)currentImage {
@@ -44,10 +48,12 @@
                         isUniform:flagUniform]) {
         _Sherlock = new Sherlock_Image_Controller(slices, height, width, flagUniform);
         if (_Sherlock != nil) {
-            [self addPixelsToImage:currentImage];
+            if([self addPixelsToImage:currentImage]){
+                return 1;   // Success
+            }
         }
     }
-    return 1;
+    return 0;               // Failure
 }
 
 - (int) findImageDimensions: (NSArray*) currentImage withSlices:(long&)slices withHeight:(long&)height withWidth:(long&)width isUniform:(BOOL&) flagUniform {
@@ -76,7 +82,7 @@
     return _Sherlock;
 }
 
-- (void) addPixelsToImage: (NSArray*) image {
+- (int) addPixelsToImage: (NSArray*) image {
     Sherlock_Image* ImageObject = self.Sherlock->last_Image_Object();
     if (ImageObject != nil) {
         unsigned slices = ImageObject->get_Slices();
@@ -85,7 +91,9 @@
             float* slice = [CurPix fImage];
             ImageObject->addSliceToImage(slice, z);
         }
+        return 1;   //Success
     }
+    return 0;       //Failure
 }
 
 - (void) dealloc {

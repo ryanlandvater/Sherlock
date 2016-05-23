@@ -12,9 +12,8 @@
 #include "Sherlock_Image.hpp"
 #include "Sherlock_Controller_Base.hpp"
 
-class Sherlock_Image_Controller: Sherlock_Controller {
+class Sherlock_Image_Controller: public Sherlock_Controller {
     std::vector<Sherlock_Image*> imageList;
-    bool isImageController = true;
     
 public:
     Sherlock_Image_Controller();
@@ -22,7 +21,7 @@ public:
     ~Sherlock_Image_Controller(void);
     
     void addImage(float*);
-    void addPixelsToImage (float*);
+    void addPixelArrayToImage (Sherlock_Image* image, float* pixels);
     Sherlock_Image* last_Image_Object(void);
     void delete_Last_Image (void);
 };

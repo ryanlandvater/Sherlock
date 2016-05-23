@@ -17,6 +17,10 @@ private:
     unsigned int width;
     unsigned int height;
     bool is_Uniform;
+    bool is_original;
+    bool is_modified;
+    bool is_binary;
+    char* segmentation_type;
     
 public:
     Sherlock_Image(); //MARK: When initialized, run analysis on the image...

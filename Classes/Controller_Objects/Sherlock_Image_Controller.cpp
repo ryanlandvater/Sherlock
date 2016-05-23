@@ -7,12 +7,12 @@
 //
 
 #include "Sherlock_Image_Controller.hpp"
-
 Sherlock_Image_Controller::Sherlock_Image_Controller() {
-    
+    setImageController();
 }
 
 Sherlock_Image_Controller::Sherlock_Image_Controller(long slices, long height, long width, bool isUniform) {
+    setImageController();
     Sherlock_Image* new_Image = new Sherlock_Image(slices, height, width, isUniform);
     imageList.emplace_back(new_Image);
 }
@@ -27,7 +27,7 @@ Sherlock_Image* Sherlock_Image_Controller::last_Image_Object() {
     return nullptr;
 }
 
-void Sherlock_Image_Controller::addPixelsToImage(float *){
+void Sherlock_Image_Controller::addPixelArrayToImage(Sherlock_Image* image_, float * pixels_){
     
 }
 

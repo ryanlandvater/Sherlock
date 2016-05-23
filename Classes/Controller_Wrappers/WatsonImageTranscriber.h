@@ -21,7 +21,7 @@
                   withWidth:(long&)width
                   isUniform:(BOOL&) flagNonUniform;
 - (int) addImageStack: (NSArray*) currentImage;
-- (void) addPixelsToImage: (NSArray*) image;
+- (int) addPixelsToImage: (NSArray*) image;
 - (Sherlock_Image_Controller*) returnSherlockImageController;
 @end
 

@@ -28,7 +28,11 @@ void Sherlock_Controller::setString(const char *string){
     string_ = (char*)(string ? strdup(string) : NULL);
 }
 
-char* Sherlock_Controller::getString(void) {return string_;}
-bool Sherlock_Controller::isImageController(void) {return isImageController_;}
-bool Sherlock_Controller::isProcessingController(void) {return isProcessingController_;}
+char* Sherlock_Controller::getString(){return string_;}
+bool Sherlock_Controller::isMainController(){return isMainController_;}
+void Sherlock_Controller::setMainController(){isMainController_=true;}
+bool Sherlock_Controller::isImageController(){return isImageController_;}
+void Sherlock_Controller::setImageController(){isImageController_=true;}
+bool Sherlock_Controller::isProcessingController() {return isProcessingController_;}
+void Sherlock_Controller::setProcessingController(){isProcessingController_=true;}
 

@@ -12,10 +12,13 @@
 		352B25CA1CC0248600E5321D /* Sherlock_Main_Controller.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 352B25C81CC0248600E5321D /* Sherlock_Main_Controller.hpp */; };
 		355432B81CBF10A3002B9D15 /* Sherlock_Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 355432B61CBF10A3002B9D15 /* Sherlock_Image.cpp */; };
 		355432B91CBF10A3002B9D15 /* Sherlock_Image.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 355432B71CBF10A3002B9D15 /* Sherlock_Image.hpp */; };
+		358823031CEFCC44002D54D2 /* watsonMainWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 358823001CEFCC44002D54D2 /* watsonMainWindowController.h */; };
+		358823041CEFCC44002D54D2 /* watsonMainWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 358823011CEFCC44002D54D2 /* watsonMainWindowController.mm */; };
+		358823051CEFCC44002D54D2 /* WatsonMainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358823021CEFCC44002D54D2 /* WatsonMainWindowController.xib */; };
 		35C0466A1CB97AB200926984 /* Sherlock_Controller_Base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35C046681CB97AB200926984 /* Sherlock_Controller_Base.cpp */; };
 		35C0466B1CB97AB200926984 /* Sherlock_Controller_Base.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 35C046691CB97AB200926984 /* Sherlock_Controller_Base.hpp */; };
-		35C0466E1CB9838C00926984 /* WatsonController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 35C0466D1CB9838C00926984 /* WatsonController.mm */; };
-		35C046701CB983A700926984 /* WatsonController.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C0466F1CB983A700926984 /* WatsonController.h */; };
+		35C0466E1CB9838C00926984 /* watsonHorosPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C0466D1CB9838C00926984 /* watsonHorosPlugin.m */; };
+		35C046701CB983A700926984 /* watsonHorosPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C0466F1CB983A700926984 /* watsonHorosPlugin.h */; };
 		35C046741CBC8E0B00926984 /* libSherlock_Lib.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C046581CB97A1C00926984 /* libSherlock_Lib.dylib */; };
 		35CD94721CBEA22B005806AF /* WatsonImageTrascriber.mm in Sources */ = {isa = PBXBuildFile; fileRef = 35CD94711CBEA22B005806AF /* WatsonImageTrascriber.mm */; };
 		35CD94751CBEA2A1005806AF /* Sherlock_Image_Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35CD94731CBEA2A1005806AF /* Sherlock_Image_Controller.cpp */; };
@@ -47,11 +50,14 @@
 		352B25C81CC0248600E5321D /* Sherlock_Main_Controller.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Sherlock_Main_Controller.hpp; path = Classes/Controller_Objects/Sherlock_Main_Controller.hpp; sourceTree = "<group>"; };
 		355432B61CBF10A3002B9D15 /* Sherlock_Image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sherlock_Image.cpp; path = Classes/Sherlock_ImageObjects/Sherlock_Image.cpp; sourceTree = "<group>"; };
 		355432B71CBF10A3002B9D15 /* Sherlock_Image.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Sherlock_Image.hpp; path = Classes/Sherlock_ImageObjects/Sherlock_Image.hpp; sourceTree = "<group>"; };
+		358823001CEFCC44002D54D2 /* watsonMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = watsonMainWindowController.h; path = Classes/UI_Objects/watsonMainWindowController.h; sourceTree = "<group>"; };
+		358823011CEFCC44002D54D2 /* watsonMainWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = watsonMainWindowController.mm; path = Classes/UI_Objects/watsonMainWindowController.mm; sourceTree = "<group>"; };
+		358823021CEFCC44002D54D2 /* WatsonMainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WatsonMainWindowController.xib; path = Classes/UI_Objects/WatsonMainWindowController.xib; sourceTree = "<group>"; };
 		35C046581CB97A1C00926984 /* libSherlock_Lib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libSherlock_Lib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C046681CB97AB200926984 /* Sherlock_Controller_Base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sherlock_Controller_Base.cpp; path = Classes/Controller_Objects/Sherlock_Controller_Base.cpp; sourceTree = "<group>"; };
 		35C046691CB97AB200926984 /* Sherlock_Controller_Base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Sherlock_Controller_Base.hpp; path = Classes/Controller_Objects/Sherlock_Controller_Base.hpp; sourceTree = "<group>"; };
-		35C0466D1CB9838C00926984 /* WatsonController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = WatsonController.mm; path = Classes/Controller_Wrappers/WatsonController.mm; sourceTree = "<group>"; };
-		35C0466F1CB983A700926984 /* WatsonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WatsonController.h; path = Classes/Controller_Wrappers/WatsonController.h; sourceTree = "<group>"; };
+		35C0466D1CB9838C00926984 /* watsonHorosPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = watsonHorosPlugin.m; path = Classes/Controller_Wrappers/watsonHorosPlugin.m; sourceTree = "<group>"; };
+		35C0466F1CB983A700926984 /* watsonHorosPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = watsonHorosPlugin.h; path = Classes/Controller_Wrappers/watsonHorosPlugin.h; sourceTree = "<group>"; };
 		35CD94711CBEA22B005806AF /* WatsonImageTrascriber.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = WatsonImageTrascriber.mm; path = Classes/Controller_Wrappers/WatsonImageTrascriber.mm; sourceTree = "<group>"; };
 		35CD94731CBEA2A1005806AF /* Sherlock_Image_Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sherlock_Image_Controller.cpp; path = Classes/Controller_Objects/Sherlock_Image_Controller.cpp; sourceTree = "<group>"; };
 		35CD94741CBEA2A1005806AF /* Sherlock_Image_Controller.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Sherlock_Image_Controller.hpp; path = Classes/Controller_Objects/Sherlock_Image_Controller.hpp; sourceTree = "<group>"; };
@@ -117,6 +123,7 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3543DF191CEF7AF300DDA299 /* UI */,
 				35C0466C1CB9833900926984 /* Controller_Wrappers */,
 				35C046631CB97A2B00926984 /* Controller_Objects */,
 				352B25CB1CC0249900E5321D /* Image_Objects */,
@@ -167,6 +174,14 @@
 			name = Image_Objects;
 			sourceTree = "<group>";
 		};
+		3543DF191CEF7AF300DDA299 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				358823021CEFCC44002D54D2 /* WatsonMainWindowController.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		35C046631CB97A2B00926984 /* Controller_Objects */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,8 +198,10 @@
 		35C0466C1CB9833900926984 /* Controller_Wrappers */ = {
 			isa = PBXGroup;
 			children = (
-				35C0466F1CB983A700926984 /* WatsonController.h */,
-				35C0466D1CB9838C00926984 /* WatsonController.mm */,
+				358823001CEFCC44002D54D2 /* watsonMainWindowController.h */,
+				358823011CEFCC44002D54D2 /* watsonMainWindowController.mm */,
+				35C0466F1CB983A700926984 /* watsonHorosPlugin.h */,
+				35C0466D1CB9838C00926984 /* watsonHorosPlugin.m */,
 				35CD94771CBEA444005806AF /* WatsonImageTranscriber.h */,
 				35CD94711CBEA22B005806AF /* WatsonImageTrascriber.mm */,
 			);
@@ -211,7 +228,8 @@
 			files = (
 				8D5B49AE048680CD000E48DA /* Sherlock_Prefix.pch in Headers */,
 				35CD94781CBEA444005806AF /* WatsonImageTranscriber.h in Headers */,
-				35C046701CB983A700926984 /* WatsonController.h in Headers */,
+				35C046701CB983A700926984 /* watsonHorosPlugin.h in Headers */,
+				358823031CEFCC44002D54D2 /* watsonMainWindowController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358823051CEFCC44002D54D2 /* WatsonMainWindowController.xib in Resources */,
 				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,8 +345,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35C0466E1CB9838C00926984 /* WatsonController.mm in Sources */,
+				35C0466E1CB9838C00926984 /* watsonHorosPlugin.m in Sources */,
 				35CD94721CBEA22B005806AF /* WatsonImageTrascriber.mm in Sources */,
+				358823041CEFCC44002D54D2 /* watsonMainWindowController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

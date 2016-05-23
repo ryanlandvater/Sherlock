@@ -33,9 +33,12 @@ public:
     
     char* getString (void);
     void setString (const char* string);
+    bool isMainController(void);
+    void setMainController(void);
     bool isImageController(void);
+    void setImageController(void);
     bool isProcessingController(void);
-
+    void setProcessingController(void);
 };
 
 #endif /* Sherlock_Controller_Base_hpp */
